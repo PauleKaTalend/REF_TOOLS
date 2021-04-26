@@ -1,0 +1,556 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><talendfile:ProcessType xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmlns:xmi="http://www.omg.org/XMI" defaultContext="Default" jobType="Standard" xmi:version="2.0">
+  <context confirmationNeeded="false" name="Default">
+    <contextParameter comment="" name="FTP_HOST" prompt="FTP_HOST?" promptNeeded="false" repositoryContextId="_Ks8LoEy-Eemc-dtBBvVzLg" type="id_String" value="62.23.163.233"/>
+    <contextParameter comment="" name="FTP_LOGIN" prompt="FTP_LOGIN?" promptNeeded="false" repositoryContextId="_Ks8LoEy-Eemc-dtBBvVzLg" type="id_String" value="PKCATEST"/>
+    <contextParameter comment="" name="FTP_PASSWD" prompt="FTP_PASSWD?" promptNeeded="false" repositoryContextId="_Ks8LoEy-Eemc-dtBBvVzLg" type="id_Password" value="enc:system.encryption.key.v1:qmMdVCXv+hOTqpWWgmS+8NDRAWjOiXaVYTym2ZOAnOEUGfh9"/>
+    <contextParameter comment="" name="FTP_PORT" prompt="FTP_PORT?" promptNeeded="false" repositoryContextId="_Ks8LoEy-Eemc-dtBBvVzLg" type="id_Integer" value="22"/>
+    <contextParameter comment="" name="SFTP_DIR_REMOTE" prompt="SFTP_DIR_REMOTE?" promptNeeded="false" repositoryContextId="_fLN7wEzAEemc-dtBBvVzLg" type="id_String" value="SFTP_DIR_REMOTE"/>
+    <contextParameter comment="" name="SFTP_DIR_LOCAL" prompt="SFTP_DIR_LOCAL?" promptNeeded="false" repositoryContextId="_fLN7wEzAEemc-dtBBvVzLg" type="id_String" value="SFTP_DIR_LOCAL"/>
+    <contextParameter comment="" name="SFTP_FILE_MASK" prompt="SFTP_FILE_MASK?" promptNeeded="false" repositoryContextId="_fLN7wEzAEemc-dtBBvVzLg" type="id_String" value="SFTP_FILE_MASK"/>
+    <contextParameter comment="" name="DB_TECH_PORT" prompt="DB_TECH_PORT?" promptNeeded="false" repositoryContextId="_-f9B4GSZEemlefGbIbAvhA" type="id_Integer" value="3306"/>
+    <contextParameter comment="" name="DB_TECH_LOGIN" prompt="DB_TECH_LOGIN?" promptNeeded="false" repositoryContextId="_-f9B4GSZEemlefGbIbAvhA" type="id_String" value="pk_tech"/>
+    <contextParameter comment="" name="DB_TECH_PASSWORD" prompt="DB_TECH_PASSWORD?" promptNeeded="false" repositoryContextId="_-f9B4GSZEemlefGbIbAvhA" type="id_Password" value="enc:system.encryption.key.v1:XCWllLPIWNB66/e4ge+xCETB8klyQ0cULQHSCHmLaHESF+bvr1g="/>
+    <contextParameter comment="" name="DB_TECH_HOST" prompt="DB_TECH_HOST?" promptNeeded="false" repositoryContextId="_-f9B4GSZEemlefGbIbAvhA" type="id_String" value="localhost"/>
+    <contextParameter comment="" name="DB_TECH_DATABASE" prompt="DB_TECH_DATABASE?" promptNeeded="false" repositoryContextId="_-f9B4GSZEemlefGbIbAvhA" type="id_String" value="pk_tech"/>
+    <contextParameter comment="" name="DB_TECH_ADD_PARAM" prompt="DB_TECH_ADD_PARAM?" promptNeeded="false" repositoryContextId="_-f9B4GSZEemlefGbIbAvhA" type="id_String" value="serverTimezone=UTC&amp;noDatetimeStringSync=true&amp;useSSL=false"/>
+    <contextParameter comment="" name="DIR_INPUT" prompt="DIR_INPUT?" promptNeeded="false" repositoryContextId="_WO991FAbEemm4e-ZUx7ZdQ" type="id_String" value="INPUT/"/>
+    <contextParameter comment="" name="DIR_ARCHIVE" prompt="DIR_ARCHIVE?" promptNeeded="false" repositoryContextId="_WO991FAbEemm4e-ZUx7ZdQ" type="id_String" value="ARCHIVE/"/>
+    <contextParameter comment="" name="DIR_REPORT" prompt="DIR_REPORT?" promptNeeded="false" repositoryContextId="_WO991FAbEemm4e-ZUx7ZdQ" type="id_String" value="REPORT/"/>
+    <contextParameter comment="" name="DIR_REJECT" prompt="DIR_REJECT?" promptNeeded="false" repositoryContextId="_WO991FAbEemm4e-ZUx7ZdQ" type="id_String" value="REJECT\"/>
+    <contextParameter comment="" name="DIR_ERROR" prompt="DIR_ERROR?" promptNeeded="false" repositoryContextId="_WO991FAbEemm4e-ZUx7ZdQ" type="id_String" value="ERROR\"/>
+    <contextParameter comment="" name="DIR_OUTPUT" prompt="DIR_OUTPUT?" promptNeeded="false" repositoryContextId="_WO991FAbEemm4e-ZUx7ZdQ" type="id_String" value="OUTPUT/"/>
+    <contextParameter comment="" name="DIR_LOG" prompt="DIR_LOG?" promptNeeded="false" repositoryContextId="_WO991FAbEemm4e-ZUx7ZdQ" type="id_String" value="LOG/"/>
+    <contextParameter comment="" name="DIR_TMP" prompt="DIR_TMP?" promptNeeded="false" repositoryContextId="_WO991FAbEemm4e-ZUx7ZdQ" type="id_String" value="TMP/"/>
+    <contextParameter comment="" name="WORKSPACE" prompt="WORKSPACE?" promptNeeded="false" repositoryContextId="_PYHisGVnEem-CuBD_HMNuw" type="id_String" value="C:/WORKSPACE_DEFAULT/"/>
+    <contextParameter comment="" name="PROJECT" prompt="PROJECT?" promptNeeded="false" repositoryContextId="_PYHisGVnEem-CuBD_HMNuw" type="id_String" value="DEFAULT"/>
+    <contextParameter comment="" name="CODE" prompt="CODE?" promptNeeded="false" repositoryContextId="_PYHisGVnEem-CuBD_HMNuw" type="id_String" value="DEFAULT"/>
+    <contextParameter comment="" name="SUFFIX_FILE" prompt="SUFFIX_FILE?" promptNeeded="false" repositoryContextId="_PYHisGVnEem-CuBD_HMNuw" type="id_String" value=""/>
+    <contextParameter comment="" name="FLOW" prompt="FLOW?" promptNeeded="false" repositoryContextId="_PYHisGVnEem-CuBD_HMNuw" type="id_String" value="DEFAULT"/>
+    <contextParameter comment="" name="BRAND" prompt="BRAND?" promptNeeded="false" repositoryContextId="_PYHisGVnEem-CuBD_HMNuw" type="id_String" value="DEFAULT"/>
+    <contextParameter comment="" name="FTP_ACTIF" prompt="FTP_ACTIF?" promptNeeded="false" repositoryContextId="_Ks8LoEy-Eemc-dtBBvVzLg" type="id_Boolean" value="false"/>
+  </context>
+  <context confirmationNeeded="false" name="PRODUCTION">
+    <contextParameter comment="" name="FTP_HOST" prompt="FTP_HOST?" promptNeeded="false" repositoryContextId="_Ks8LoEy-Eemc-dtBBvVzLg" type="id_String" value="62.23.163.233"/>
+    <contextParameter comment="" name="FTP_LOGIN" prompt="FTP_LOGIN?" promptNeeded="false" repositoryContextId="_Ks8LoEy-Eemc-dtBBvVzLg" type="id_String" value="PKCATEST"/>
+    <contextParameter comment="" name="FTP_PASSWD" prompt="FTP_PASSWD?" promptNeeded="false" repositoryContextId="_Ks8LoEy-Eemc-dtBBvVzLg" type="id_Password" value="enc:system.encryption.key.v1:X3C4u2sfSZX0k1K1mIF/HsqJMckeSnIJwtcTpgclW2XQFzJL"/>
+    <contextParameter comment="" name="FTP_PORT" prompt="FTP_PORT?" promptNeeded="false" repositoryContextId="_Ks8LoEy-Eemc-dtBBvVzLg" type="id_Integer" value="22"/>
+    <contextParameter comment="" name="SFTP_DIR_REMOTE" prompt="SFTP_DIR_REMOTE?" promptNeeded="false" repositoryContextId="_fLN7wEzAEemc-dtBBvVzLg" type="id_String" value="SFTP_DIR_REMOTE"/>
+    <contextParameter comment="" name="SFTP_DIR_LOCAL" prompt="SFTP_DIR_LOCAL?" promptNeeded="false" repositoryContextId="_fLN7wEzAEemc-dtBBvVzLg" type="id_String" value="SFTP_DIR_LOCAL"/>
+    <contextParameter comment="" name="SFTP_FILE_MASK" prompt="SFTP_FILE_MASK?" promptNeeded="false" repositoryContextId="_fLN7wEzAEemc-dtBBvVzLg" type="id_String" value="SFTP_FILE_MASK"/>
+    <contextParameter comment="" name="DIR_INPUT" prompt="DIR_INPUT?" promptNeeded="false" repositoryContextId="_WO991FAbEemm4e-ZUx7ZdQ" type="id_String" value="INPUT/"/>
+    <contextParameter comment="" name="DIR_ARCHIVE" prompt="DIR_ARCHIVE?" promptNeeded="false" repositoryContextId="_WO991FAbEemm4e-ZUx7ZdQ" type="id_String" value="ARCHIVE/"/>
+    <contextParameter comment="" name="DIR_REPORT" prompt="DIR_REPORT?" promptNeeded="false" repositoryContextId="_WO991FAbEemm4e-ZUx7ZdQ" type="id_String" value="REPORT/"/>
+    <contextParameter comment="" name="DIR_REJECT" prompt="DIR_REJECT?" promptNeeded="false" repositoryContextId="_WO991FAbEemm4e-ZUx7ZdQ" type="id_String" value="REJECT\"/>
+    <contextParameter comment="" name="DIR_ERROR" prompt="DIR_ERROR?" promptNeeded="false" repositoryContextId="_WO991FAbEemm4e-ZUx7ZdQ" type="id_String" value="ERROR\"/>
+    <contextParameter comment="" name="DIR_OUTPUT" prompt="DIR_OUTPUT?" promptNeeded="false" repositoryContextId="_WO991FAbEemm4e-ZUx7ZdQ" type="id_String" value="OUTPUT/"/>
+    <contextParameter comment="" name="DIR_LOG" prompt="DIR_LOG?" promptNeeded="false" repositoryContextId="_WO991FAbEemm4e-ZUx7ZdQ" type="id_String" value="LOG/"/>
+    <contextParameter comment="" name="DIR_TMP" prompt="DIR_TMP?" promptNeeded="false" repositoryContextId="_WO991FAbEemm4e-ZUx7ZdQ" type="id_String" value="TMP/"/>
+    <contextParameter comment="" name="WORKSPACE" prompt="WORKSPACE?" promptNeeded="false" repositoryContextId="_PYHisGVnEem-CuBD_HMNuw" type="id_String" value="F:/WORKSPACE_DEFAULT/"/>
+    <contextParameter comment="" name="DB_TECH_PORT" prompt="DB_TECH_PORT?" promptNeeded="false" repositoryContextId="_-f9B4GSZEemlefGbIbAvhA" type="id_Integer" value="3306"/>
+    <contextParameter comment="" name="DB_TECH_HOST" prompt="DB_TECH_HOST?" promptNeeded="false" repositoryContextId="_-f9B4GSZEemlefGbIbAvhA" type="id_String" value="localhost"/>
+    <contextParameter comment="" name="DB_TECH_LOGIN" prompt="DB_TECH_LOGIN?" promptNeeded="false" repositoryContextId="_-f9B4GSZEemlefGbIbAvhA" type="id_String" value="pk_tech"/>
+    <contextParameter comment="" name="DB_TECH_PASSWORD" prompt="DB_TECH_PASSWORD?" promptNeeded="false" repositoryContextId="_-f9B4GSZEemlefGbIbAvhA" type="id_Password" value="enc:system.encryption.key.v1:o/7fgqgb0+oOqObGZTVNEt9Qjer0RJIltze045tSH1716TpcFsY="/>
+    <contextParameter comment="" name="DB_TECH_DATABASE" prompt="DB_TECH_DATABASE?" promptNeeded="false" repositoryContextId="_-f9B4GSZEemlefGbIbAvhA" type="id_String" value="pk_tech"/>
+    <contextParameter comment="" name="DB_TECH_ADD_PARAM" prompt="DB_TECH_ADD_PARAM?" promptNeeded="false" repositoryContextId="_-f9B4GSZEemlefGbIbAvhA" type="id_String" value="serverTimezone=UTC&amp;noDatetimeStringSync=true&amp;useSSL=false"/>
+    <contextParameter comment="" name="PROJECT" prompt="PROJECT?" promptNeeded="false" repositoryContextId="_PYHisGVnEem-CuBD_HMNuw" type="id_String" value="DEFAULT"/>
+    <contextParameter comment="" name="CODE" prompt="CODE?" promptNeeded="false" repositoryContextId="_PYHisGVnEem-CuBD_HMNuw" type="id_String" value="DEFAULT"/>
+    <contextParameter comment="" name="SUFFIX_FILE" prompt="SUFFIX_FILE?" promptNeeded="false" repositoryContextId="_PYHisGVnEem-CuBD_HMNuw" type="id_String" value=""/>
+    <contextParameter comment="" name="FLOW" prompt="FLOW?" promptNeeded="false" repositoryContextId="_PYHisGVnEem-CuBD_HMNuw" type="id_String" value="DEFAULT"/>
+    <contextParameter comment="" name="BRAND" prompt="BRAND?" promptNeeded="false" repositoryContextId="_PYHisGVnEem-CuBD_HMNuw" type="id_String" value="DEFAULT"/>
+    <contextParameter comment="" name="FTP_ACTIF" prompt="FTP_ACTIF?" promptNeeded="false" repositoryContextId="_Ks8LoEy-Eemc-dtBBvVzLg" type="id_Boolean" value="false"/>
+  </context>
+  <context confirmationNeeded="false" name="RECETTE">
+    <contextParameter comment="" name="FTP_HOST" prompt="FTP_HOST?" promptNeeded="false" repositoryContextId="_Ks8LoEy-Eemc-dtBBvVzLg" type="id_String" value="62.23.163.233"/>
+    <contextParameter comment="" name="FTP_LOGIN" prompt="FTP_LOGIN?" promptNeeded="false" repositoryContextId="_Ks8LoEy-Eemc-dtBBvVzLg" type="id_String" value="PKCATEST"/>
+    <contextParameter comment="" name="FTP_PASSWD" prompt="FTP_PASSWD?" promptNeeded="false" repositoryContextId="_Ks8LoEy-Eemc-dtBBvVzLg" type="id_Password" value="enc:system.encryption.key.v1:MXNkloQiSPA6zlmepxjnaExrZrFm9qaKYE7BX199eAfZgFNC"/>
+    <contextParameter comment="" name="FTP_PORT" prompt="FTP_PORT?" promptNeeded="false" repositoryContextId="_Ks8LoEy-Eemc-dtBBvVzLg" type="id_Integer" value="22"/>
+    <contextParameter comment="" name="SFTP_DIR_REMOTE" prompt="SFTP_DIR_REMOTE?" promptNeeded="false" repositoryContextId="_fLN7wEzAEemc-dtBBvVzLg" type="id_String" value="SFTP_DIR_REMOTE"/>
+    <contextParameter comment="" name="SFTP_DIR_LOCAL" prompt="SFTP_DIR_LOCAL?" promptNeeded="false" repositoryContextId="_fLN7wEzAEemc-dtBBvVzLg" type="id_String" value="SFTP_DIR_LOCAL"/>
+    <contextParameter comment="" name="SFTP_FILE_MASK" prompt="SFTP_FILE_MASK?" promptNeeded="false" repositoryContextId="_fLN7wEzAEemc-dtBBvVzLg" type="id_String" value="SFTP_FILE_MASK"/>
+    <contextParameter comment="" name="DIR_INPUT" prompt="DIR_INPUT?" promptNeeded="false" repositoryContextId="_WO991FAbEemm4e-ZUx7ZdQ" type="id_String" value="INPUT/"/>
+    <contextParameter comment="" name="DIR_ARCHIVE" prompt="DIR_ARCHIVE?" promptNeeded="false" repositoryContextId="_WO991FAbEemm4e-ZUx7ZdQ" type="id_String" value="ARCHIVE/"/>
+    <contextParameter comment="" name="DIR_REPORT" prompt="DIR_REPORT?" promptNeeded="false" repositoryContextId="_WO991FAbEemm4e-ZUx7ZdQ" type="id_String" value="REPORT/"/>
+    <contextParameter comment="" name="DIR_REJECT" prompt="DIR_REJECT?" promptNeeded="false" repositoryContextId="_WO991FAbEemm4e-ZUx7ZdQ" type="id_String" value="REJECT\"/>
+    <contextParameter comment="" name="DIR_ERROR" prompt="DIR_ERROR?" promptNeeded="false" repositoryContextId="_WO991FAbEemm4e-ZUx7ZdQ" type="id_String" value="ERROR\"/>
+    <contextParameter comment="" name="DIR_OUTPUT" prompt="DIR_OUTPUT?" promptNeeded="false" repositoryContextId="_WO991FAbEemm4e-ZUx7ZdQ" type="id_String" value="OUTPUT/"/>
+    <contextParameter comment="" name="DIR_LOG" prompt="DIR_LOG?" promptNeeded="false" repositoryContextId="_WO991FAbEemm4e-ZUx7ZdQ" type="id_String" value="LOG/"/>
+    <contextParameter comment="" name="DIR_TMP" prompt="DIR_TMP?" promptNeeded="false" repositoryContextId="_WO991FAbEemm4e-ZUx7ZdQ" type="id_String" value="TMP/"/>
+    <contextParameter comment="" name="WORKSPACE" prompt="WORKSPACE?" promptNeeded="false" repositoryContextId="_PYHisGVnEem-CuBD_HMNuw" type="id_String" value="F:/WORKSPACE_DEFAULT/"/>
+    <contextParameter comment="" name="DB_TECH_PORT" prompt="DB_TECH_PORT?" promptNeeded="false" repositoryContextId="_-f9B4GSZEemlefGbIbAvhA" type="id_Integer" value="3306"/>
+    <contextParameter comment="" name="DB_TECH_HOST" prompt="DB_TECH_HOST?" promptNeeded="false" repositoryContextId="_-f9B4GSZEemlefGbIbAvhA" type="id_String" value="localhost"/>
+    <contextParameter comment="" name="DB_TECH_LOGIN" prompt="DB_TECH_LOGIN?" promptNeeded="false" repositoryContextId="_-f9B4GSZEemlefGbIbAvhA" type="id_String" value="pk_tech"/>
+    <contextParameter comment="" name="DB_TECH_PASSWORD" prompt="DB_TECH_PASSWORD?" promptNeeded="false" repositoryContextId="_-f9B4GSZEemlefGbIbAvhA" type="id_Password" value="enc:system.encryption.key.v1:LeSRezDB/nys9vJ9pTRkDeCw8GzG2+Un3ZpbwKdYMuD3V8sebGo="/>
+    <contextParameter comment="" name="DB_TECH_DATABASE" prompt="DB_TECH_DATABASE?" promptNeeded="false" repositoryContextId="_-f9B4GSZEemlefGbIbAvhA" type="id_String" value="pk_tech"/>
+    <contextParameter comment="" name="DB_TECH_ADD_PARAM" prompt="DB_TECH_ADD_PARAM?" promptNeeded="false" repositoryContextId="_-f9B4GSZEemlefGbIbAvhA" type="id_String" value="serverTimezone=UTC&amp;noDatetimeStringSync=true&amp;useSSL=false"/>
+    <contextParameter comment="" name="PROJECT" prompt="PROJECT?" promptNeeded="false" repositoryContextId="_PYHisGVnEem-CuBD_HMNuw" type="id_String" value="DEFAULT"/>
+    <contextParameter comment="" name="CODE" prompt="CODE?" promptNeeded="false" repositoryContextId="_PYHisGVnEem-CuBD_HMNuw" type="id_String" value="DEFAULT"/>
+    <contextParameter comment="" name="SUFFIX_FILE" prompt="SUFFIX_FILE?" promptNeeded="false" repositoryContextId="_PYHisGVnEem-CuBD_HMNuw" type="id_String" value=""/>
+    <contextParameter comment="" name="FLOW" prompt="FLOW?" promptNeeded="false" repositoryContextId="_PYHisGVnEem-CuBD_HMNuw" type="id_String" value="DEFAULT"/>
+    <contextParameter comment="" name="BRAND" prompt="BRAND?" promptNeeded="false" repositoryContextId="_PYHisGVnEem-CuBD_HMNuw" type="id_String" value="DEFAULT"/>
+    <contextParameter comment="" name="FTP_ACTIF" prompt="FTP_ACTIF?" promptNeeded="false" repositoryContextId="_Ks8LoEy-Eemc-dtBBvVzLg" type="id_Boolean" value="false"/>
+  </context>
+  <context confirmationNeeded="false" name="DEV">
+    <contextParameter comment="" name="FTP_HOST" prompt="FTP_HOST?" promptNeeded="false" repositoryContextId="_Ks8LoEy-Eemc-dtBBvVzLg" type="id_String" value="62.23.163.233"/>
+    <contextParameter comment="" name="FTP_LOGIN" prompt="FTP_LOGIN?" promptNeeded="false" repositoryContextId="_Ks8LoEy-Eemc-dtBBvVzLg" type="id_String" value="PKCATEST"/>
+    <contextParameter comment="" name="FTP_PASSWD" prompt="FTP_PASSWD?" promptNeeded="false" repositoryContextId="_Ks8LoEy-Eemc-dtBBvVzLg" type="id_Password" value="enc:system.encryption.key.v1:wePYO3e6KjR7kY7Emtvo7Q3zMZbNggZup/IGzvm6WqyzdeKg"/>
+    <contextParameter comment="" name="FTP_PORT" prompt="FTP_PORT?" promptNeeded="false" repositoryContextId="_Ks8LoEy-Eemc-dtBBvVzLg" type="id_Integer" value="22"/>
+    <contextParameter comment="" name="SFTP_DIR_REMOTE" prompt="SFTP_DIR_REMOTE?" promptNeeded="false" repositoryContextId="_fLN7wEzAEemc-dtBBvVzLg" type="id_String" value="SFTP_DIR_REMOTE"/>
+    <contextParameter comment="" name="SFTP_DIR_LOCAL" prompt="SFTP_DIR_LOCAL?" promptNeeded="false" repositoryContextId="_fLN7wEzAEemc-dtBBvVzLg" type="id_String" value="SFTP_DIR_LOCAL"/>
+    <contextParameter comment="" name="SFTP_FILE_MASK" prompt="SFTP_FILE_MASK?" promptNeeded="false" repositoryContextId="_fLN7wEzAEemc-dtBBvVzLg" type="id_String" value="SFTP_FILE_MASK"/>
+    <contextParameter comment="" name="DB_TECH_PORT" prompt="DB_TECH_PORT?" promptNeeded="false" repositoryContextId="_-f9B4GSZEemlefGbIbAvhA" type="id_Integer" value="3306"/>
+    <contextParameter comment="" name="DB_TECH_LOGIN" prompt="DB_TECH_LOGIN?" promptNeeded="false" repositoryContextId="_-f9B4GSZEemlefGbIbAvhA" type="id_String" value="pk_tech"/>
+    <contextParameter comment="" name="DB_TECH_PASSWORD" prompt="DB_TECH_PASSWORD?" promptNeeded="false" repositoryContextId="_-f9B4GSZEemlefGbIbAvhA" type="id_Password" value="enc:system.encryption.key.v1:v4xdQUSWV/91uN4gkU5Lkjt0dmlwVqFDTDeh+WeYeTQH1JQUNCs="/>
+    <contextParameter comment="" name="DB_TECH_HOST" prompt="DB_TECH_HOST?" promptNeeded="false" repositoryContextId="_-f9B4GSZEemlefGbIbAvhA" type="id_String" value="localhost"/>
+    <contextParameter comment="" name="DB_TECH_DATABASE" prompt="DB_TECH_DATABASE?" promptNeeded="false" repositoryContextId="_-f9B4GSZEemlefGbIbAvhA" type="id_String" value="pk_tech"/>
+    <contextParameter comment="" name="DB_TECH_ADD_PARAM" prompt="DB_TECH_ADD_PARAM?" promptNeeded="false" repositoryContextId="_-f9B4GSZEemlefGbIbAvhA" type="id_String" value="serverTimezone=UTC&amp;noDatetimeStringSync=true&amp;useSSL=false"/>
+    <contextParameter comment="" name="DIR_INPUT" prompt="DIR_INPUT?" promptNeeded="false" repositoryContextId="_WO991FAbEemm4e-ZUx7ZdQ" type="id_String" value="INPUT/"/>
+    <contextParameter comment="" name="DIR_ARCHIVE" prompt="DIR_ARCHIVE?" promptNeeded="false" repositoryContextId="_WO991FAbEemm4e-ZUx7ZdQ" type="id_String" value="ARCHIVE/"/>
+    <contextParameter comment="" name="DIR_REPORT" prompt="DIR_REPORT?" promptNeeded="false" repositoryContextId="_WO991FAbEemm4e-ZUx7ZdQ" type="id_String" value="REPORT/"/>
+    <contextParameter comment="" name="DIR_REJECT" prompt="DIR_REJECT?" promptNeeded="false" repositoryContextId="_WO991FAbEemm4e-ZUx7ZdQ" type="id_String" value="REJECT\"/>
+    <contextParameter comment="" name="DIR_ERROR" prompt="DIR_ERROR?" promptNeeded="false" repositoryContextId="_WO991FAbEemm4e-ZUx7ZdQ" type="id_String" value="ERROR\"/>
+    <contextParameter comment="" name="DIR_OUTPUT" prompt="DIR_OUTPUT?" promptNeeded="false" repositoryContextId="_WO991FAbEemm4e-ZUx7ZdQ" type="id_String" value="OUTPUT/"/>
+    <contextParameter comment="" name="DIR_LOG" prompt="DIR_LOG?" promptNeeded="false" repositoryContextId="_WO991FAbEemm4e-ZUx7ZdQ" type="id_String" value="LOG/"/>
+    <contextParameter comment="" name="DIR_TMP" prompt="DIR_TMP?" promptNeeded="false" repositoryContextId="_WO991FAbEemm4e-ZUx7ZdQ" type="id_String" value="TMP/"/>
+    <contextParameter comment="" name="WORKSPACE" prompt="WORKSPACE?" promptNeeded="false" repositoryContextId="_PYHisGVnEem-CuBD_HMNuw" type="id_String" value="D:/WORKSPACE_DEFAULT/"/>
+    <contextParameter comment="" name="PROJECT" prompt="PROJECT?" promptNeeded="false" repositoryContextId="_PYHisGVnEem-CuBD_HMNuw" type="id_String" value="DEFAULT"/>
+    <contextParameter comment="" name="FLOW" prompt="FLOW?" promptNeeded="false" repositoryContextId="_PYHisGVnEem-CuBD_HMNuw" type="id_String" value="DEFAULT"/>
+    <contextParameter comment="" name="BRAND" prompt="BRAND?" promptNeeded="false" repositoryContextId="_PYHisGVnEem-CuBD_HMNuw" type="id_String" value="DEFAULT"/>
+    <contextParameter comment="" name="CODE" prompt="CODE?" promptNeeded="false" repositoryContextId="_PYHisGVnEem-CuBD_HMNuw" type="id_String" value="DEFAULT"/>
+    <contextParameter comment="" name="SUFFIX_FILE" prompt="SUFFIX_FILE?" promptNeeded="false" repositoryContextId="_PYHisGVnEem-CuBD_HMNuw" type="id_String" value=""/>
+    <contextParameter comment="" name="FTP_ACTIF" prompt="FTP_ACTIF?" promptNeeded="false" repositoryContextId="_Ks8LoEy-Eemc-dtBBvVzLg" type="id_Boolean" value="false"/>
+  </context>
+  <context confirmationNeeded="false" name="PROD">
+    <contextParameter comment="" name="FTP_HOST" prompt="FTP_HOST?" promptNeeded="false" repositoryContextId="_Ks8LoEy-Eemc-dtBBvVzLg" type="id_String" value="62.23.163.233"/>
+    <contextParameter comment="" name="FTP_LOGIN" prompt="FTP_LOGIN?" promptNeeded="false" repositoryContextId="_Ks8LoEy-Eemc-dtBBvVzLg" type="id_String" value="PKCATEST"/>
+    <contextParameter comment="" name="FTP_PASSWD" prompt="FTP_PASSWD?" promptNeeded="false" repositoryContextId="_Ks8LoEy-Eemc-dtBBvVzLg" type="id_Password" value="enc:system.encryption.key.v1:fppk9qCRZ+XyAH+XguDcK83IUcBkn3k7jcsXTNEUoQaS4RBD"/>
+    <contextParameter comment="" name="FTP_PORT" prompt="FTP_PORT?" promptNeeded="false" repositoryContextId="_Ks8LoEy-Eemc-dtBBvVzLg" type="id_Integer" value="22"/>
+    <contextParameter comment="" name="SFTP_DIR_REMOTE" prompt="SFTP_DIR_REMOTE?" promptNeeded="false" repositoryContextId="_fLN7wEzAEemc-dtBBvVzLg" type="id_String" value="SFTP_DIR_REMOTE"/>
+    <contextParameter comment="" name="SFTP_DIR_LOCAL" prompt="SFTP_DIR_LOCAL?" promptNeeded="false" repositoryContextId="_fLN7wEzAEemc-dtBBvVzLg" type="id_String" value="SFTP_DIR_LOCAL"/>
+    <contextParameter comment="" name="SFTP_FILE_MASK" prompt="SFTP_FILE_MASK?" promptNeeded="false" repositoryContextId="_fLN7wEzAEemc-dtBBvVzLg" type="id_String" value="SFTP_FILE_MASK"/>
+    <contextParameter comment="" name="DB_TECH_PORT" prompt="DB_TECH_PORT?" promptNeeded="false" repositoryContextId="_-f9B4GSZEemlefGbIbAvhA" type="id_Integer" value="3306"/>
+    <contextParameter comment="" name="DB_TECH_LOGIN" prompt="DB_TECH_LOGIN?" promptNeeded="false" repositoryContextId="_-f9B4GSZEemlefGbIbAvhA" type="id_String" value="pk_tech"/>
+    <contextParameter comment="" name="DB_TECH_PASSWORD" prompt="DB_TECH_PASSWORD?" promptNeeded="false" repositoryContextId="_-f9B4GSZEemlefGbIbAvhA" type="id_Password" value="enc:system.encryption.key.v1:Ey+VM3zEa0vNJW2Jl737iudAwUxZoooi1fXVPbHZIPAegSk4PGA="/>
+    <contextParameter comment="" name="DB_TECH_HOST" prompt="DB_TECH_HOST?" promptNeeded="false" repositoryContextId="_-f9B4GSZEemlefGbIbAvhA" type="id_String" value="localhost"/>
+    <contextParameter comment="" name="DB_TECH_DATABASE" prompt="DB_TECH_DATABASE?" promptNeeded="false" repositoryContextId="_-f9B4GSZEemlefGbIbAvhA" type="id_String" value="pk_tech"/>
+    <contextParameter comment="" name="DB_TECH_ADD_PARAM" prompt="DB_TECH_ADD_PARAM?" promptNeeded="false" repositoryContextId="_-f9B4GSZEemlefGbIbAvhA" type="id_String" value="serverTimezone=UTC&amp;noDatetimeStringSync=true&amp;useSSL=false"/>
+    <contextParameter comment="" name="DIR_INPUT" prompt="DIR_INPUT?" promptNeeded="false" repositoryContextId="_WO991FAbEemm4e-ZUx7ZdQ" type="id_String" value="INPUT/"/>
+    <contextParameter comment="" name="DIR_ARCHIVE" prompt="DIR_ARCHIVE?" promptNeeded="false" repositoryContextId="_WO991FAbEemm4e-ZUx7ZdQ" type="id_String" value="ARCHIVE/"/>
+    <contextParameter comment="" name="DIR_REPORT" prompt="DIR_REPORT?" promptNeeded="false" repositoryContextId="_WO991FAbEemm4e-ZUx7ZdQ" type="id_String" value="REPORT/"/>
+    <contextParameter comment="" name="DIR_REJECT" prompt="DIR_REJECT?" promptNeeded="false" repositoryContextId="_WO991FAbEemm4e-ZUx7ZdQ" type="id_String" value="REJECT\"/>
+    <contextParameter comment="" name="DIR_ERROR" prompt="DIR_ERROR?" promptNeeded="false" repositoryContextId="_WO991FAbEemm4e-ZUx7ZdQ" type="id_String" value="ERROR\"/>
+    <contextParameter comment="" name="DIR_OUTPUT" prompt="DIR_OUTPUT?" promptNeeded="false" repositoryContextId="_WO991FAbEemm4e-ZUx7ZdQ" type="id_String" value="OUTPUT/"/>
+    <contextParameter comment="" name="DIR_LOG" prompt="DIR_LOG?" promptNeeded="false" repositoryContextId="_WO991FAbEemm4e-ZUx7ZdQ" type="id_String" value="LOG/"/>
+    <contextParameter comment="" name="DIR_TMP" prompt="DIR_TMP?" promptNeeded="false" repositoryContextId="_WO991FAbEemm4e-ZUx7ZdQ" type="id_String" value="TMP/"/>
+    <contextParameter comment="" name="WORKSPACE" prompt="WORKSPACE?" promptNeeded="false" repositoryContextId="_PYHisGVnEem-CuBD_HMNuw" type="id_String" value="D:/WORKSPACE_DEFAULT/"/>
+    <contextParameter comment="" name="PROJECT" prompt="PROJECT?" promptNeeded="false" repositoryContextId="_PYHisGVnEem-CuBD_HMNuw" type="id_String" value="DEFAULT"/>
+    <contextParameter comment="" name="FLOW" prompt="FLOW?" promptNeeded="false" repositoryContextId="_PYHisGVnEem-CuBD_HMNuw" type="id_String" value="DEFAULT"/>
+    <contextParameter comment="" name="BRAND" prompt="BRAND?" promptNeeded="false" repositoryContextId="_PYHisGVnEem-CuBD_HMNuw" type="id_String" value="DEFAULT"/>
+    <contextParameter comment="" name="CODE" prompt="CODE?" promptNeeded="false" repositoryContextId="_PYHisGVnEem-CuBD_HMNuw" type="id_String" value="DEFAULT"/>
+    <contextParameter comment="" name="SUFFIX_FILE" prompt="SUFFIX_FILE?" promptNeeded="false" repositoryContextId="_PYHisGVnEem-CuBD_HMNuw" type="id_String" value=""/>
+    <contextParameter comment="" name="FTP_ACTIF" prompt="FTP_ACTIF?" promptNeeded="false" repositoryContextId="_Ks8LoEy-Eemc-dtBBvVzLg" type="id_Boolean" value="false"/>
+  </context>
+  <parameters>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_X" show="false" value="0"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" show="false" value="0"/>
+    <elementParameter field="TEXT" name="REPOSITORY_CONNECTION_ID" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_PROPERTY_TYPENAME" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_DISTRIBUTION" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_VERSION" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_KERBEROS" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_PRINCIPAL" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_USERNAME" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_GROUP" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_USE_KEYTAB" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_KT_PRINCIPAL" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_KEY_TAB" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_OO_KERBEROS" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_END_POINT" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_JOB_TRACKER_ENDPOINT" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_END_POINT" show="false" value=""/>
+    <elementParameter field="CHECK" name="IMPLICITCONTEXT_USE_PROJECT_SETTINGS" show="false" value="true"/>
+    <elementParameter field="CHECK" name="STATANDLOG_USE_PROJECT_SETTINGS" show="false" value="true"/>
+    <elementParameter field="CHECK" name="MULTI_THREAD_EXECATION" value="false"/>
+    <elementParameter field="TEXT" name="PARALLELIZE_UNIT_SIZE" value="25000"/>
+    <elementParameter field="CHECK" name="IMPLICIT_TCONTEXTLOAD" value="false"/>
+    <elementParameter field="RADIO" name="FROM_FILE_FLAG_IMPLICIT_CONTEXT" show="false" value="false"/>
+    <elementParameter field="RADIO" name="FROM_DATABASE_FLAG_IMPLICIT_CONTEXT" show="false" value="false"/>
+    <elementParameter field="FILE" name="IMPLICIT_TCONTEXTLOAD_FILE" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" show="false" value="&quot;&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE_IMPLICIT_CONTEXT" show="false" value=""/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION_IMPLICIT_CONTEXT" show="false" value=""/>
+    <elementParameter field="TEXT" name="URL_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR_IMPLICIT_CONTEXT" show="false"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="HOST_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PORT_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:tsx+cIQW03+S6KSLBRkVij1izTJFPsHC9WPXQfRb"/>
+    <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="LOAD_NEW_VARIABLE" show="false" value="Warning"/>
+    <elementParameter field="CLOSED_LIST" name="NOT_LOAD_OLD_VARIABLE" show="false" value="Warning"/>
+    <elementParameter field="CHECK" name="PRINT_OPERATIONS" show="false" value="false"/>
+    <elementParameter field="CHECK" name="DISABLE_ERROR" show="false" value="false"/>
+    <elementParameter field="CHECK" name="DISABLE_WARNINGS" show="false" value="false"/>
+    <elementParameter field="CHECK" name="DISABLE_INFO" show="false" value="false"/>
+    <elementParameter field="CHECK" name="ON_STATCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_LOGCATCHER_FLAG" value="true"/>
+    <elementParameter field="CHECK" name="ON_METERCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_CONSOLE_FLAG" value="true"/>
+    <elementParameter field="CHECK" name="ON_FILES_FLAG" value="false"/>
+    <elementParameter field="DIRECTORY" name="FILE_PATH" show="false" value="&quot;D:/XAV/WX_CONSULTING/CLIENTS/PAULE_KA/WS_USERDEV/.metadata&quot;"/>
+    <elementParameter field="TEXT" name="FILENAME_STATS" show="false" value="&quot;stats_file.txt&quot;"/>
+    <elementParameter field="TEXT" name="FILENAME_LOGS" show="false" value="&quot;logs_file.txt&quot;"/>
+    <elementParameter field="TEXT" name="FILENAME_METTER" show="false" value="&quot;meter_file.txt&quot;"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="ISO-8859-15"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" show="false" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="ON_DATABASE_FLAG" value="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE" show="false" value="tJDBCOutput"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" show="false" value="ORACLE_12"/>
+    <elementParameter field="TEXT" name="URL" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR" show="false"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="HOST" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PORT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="DATASOURCE" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PROPERTIES" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:J5QF8LwLmkFxwVK7Exvy6FLaFJqocdd2E/h5x+M9"/>
+    <elementParameter field="FILE" name="DBFILE" show="false" value="&quot;&quot;"/>
+    <elementParameter field="DBTABLE" name="TABLE_STATS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="DBTABLE" name="TABLE_LOGS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="DBTABLE" name="TABLE_METER" show="false" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="CATCH_RUNTIME_ERRORS" value="true"/>
+    <elementParameter field="CHECK" name="CATCH_USER_ERRORS" value="true"/>
+    <elementParameter field="CHECK" name="CATCH_USER_WARNING" value="true"/>
+    <elementParameter field="CHECK" name="CATCH_REALTIME_STATS" show="false" value="false"/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_HEADERID" show="false" value=""/>
+    <elementParameter field="CHECK" name="HEADER_ENABLED" show="false" value="false"/>
+    <elementParameter field="TEXT" name="HEADER_LIBRARY" show="false" value=""/>
+    <elementParameter field="TEXT" name="HEADER_CODE" show="false" value=""/>
+    <elementParameter field="TEXT" name="HEADER_IMPORT" show="false" value=""/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_FOOTERID" show="false" value=""/>
+    <elementParameter field="CHECK" name="FOOTER_ENABLED" show="false" value="false"/>
+    <elementParameter field="TEXT" name="FOOTER_LIBRARY" show="false" value=""/>
+    <elementParameter field="TEXT" name="FOOTER_CODE" show="false" value=""/>
+    <elementParameter field="TEXT" name="FOOTER_IMPORT" show="false" value=""/>
+    <routinesParameter id="_wtLvgEXiEemP6szmt9Up7A" name="DataOperation"/>
+    <routinesParameter id="_wu0uQEXiEemP6szmt9Up7A" name="Mathematical"/>
+    <routinesParameter id="_wvRaNkXiEemP6szmt9Up7A" name="Numeric"/>
+    <routinesParameter id="_wvRaQEXiEemP6szmt9Up7A" name="Relational"/>
+    <routinesParameter id="_wvbLNkXiEemP6szmt9Up7A" name="StringHandling"/>
+    <routinesParameter id="_wvbLQEXiEemP6szmt9Up7A" name="TalendDataGenerator"/>
+    <routinesParameter id="_wvkVJkXiEemP6szmt9Up7A" name="TalendDate"/>
+    <routinesParameter id="_wvuGKkXiEemP6szmt9Up7A" name="TalendStringUtil"/>
+    <routinesParameter id="_wvuGIEXiEemP6szmt9Up7A" name="TalendString"/>
+    <routinesParameter id="_5H6DuFIYEemsqf_w_675CQ" name="SQLike"/>
+  </parameters>
+  <node componentName="tPrejob" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="128" posY="32">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tPrejob_1"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+  </node>
+  <node componentName="tWarn" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="352" posY="32">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tWarn_1"/>
+    <elementParameter field="TEXT" name="MESSAGE" value="jobName + &quot; start ...&quot;"/>
+    <elementParameter field="TEXT" name="CODE" value="42"/>
+    <elementParameter field="CLOSED_LIST" name="PRIORITY" value="3"/>
+    <elementParameter field="TEXT" name="LABEL" value="OK"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tWarn_1"/>
+  </node>
+  <node componentName="tFTPConnection" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="544" posY="32">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFTPConnection_1"/>
+    <elementParameter field="TEXT" name="HOST" value="context.FTP_HOST"/>
+    <elementParameter field="TEXT" name="PORT" value="context.FTP_PORT"/>
+    <elementParameter field="TEXT" name="FTPS_PORT" show="false" value="990"/>
+    <elementParameter field="TEXT" name="USER" value="context.FTP_LOGIN"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:mbZb1Tq/u5VSzsVoC7JVEgOqT5a4v33dfTH3vek1us63rUaFULfsu6Xyqza1eQ=="/>
+    <elementParameter field="CHECK" name="SFTP" value="false"/>
+    <elementParameter field="CHECK" name="FTPS" value="false"/>
+    <elementParameter field="FILE" name="KEYSTORE_FILE" show="false" value="&quot;&quot;"/>
+    <elementParameter field="PASSWORD" name="KEYSTORE_PASS" show="false" value="enc:system.encryption.key.v1:U6tn255C5G9itl70dBJjcwbbEO/llvt3eQDZj4I7X3TwNxLK"/>
+    <elementParameter field="CLOSED_LIST" name="AUTH_METHOD" show="false" value="PASSWORD"/>
+    <elementParameter field="FILE" name="PRIVATEKEY" show="false" value="&quot;/.ssh/id_dsa&quot;"/>
+    <elementParameter field="PASSWORD" name="PASSPHRASE" show="false" value="enc:system.encryption.key.v1:92G2doVMtQVRvHPc8ziavaSDC3NaTXVDEN6khMoUPsUwtKht"/>
+    <elementParameter field="CLOSED_LIST" name="CONNECT_MODE" value="PASSIVE"/>
+    <elementParameter field="CLOSED_LIST" name="SECURITY_MODE" show="false" value="IMPLICIT"/>
+    <elementParameter field="CHECK" name="USE_ENCODING" show="false" value="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="USE_PROXY" value="false"/>
+    <elementParameter field="TEXT" name="PROXY_HOST" show="false" value="&quot;61.163.92.4&quot;"/>
+    <elementParameter field="TEXT" name="PROXY_PORT" show="false" value="&quot;1080&quot;"/>
+    <elementParameter field="TEXT" name="PROXY_USERNAME" show="false" value="&quot;&quot;"/>
+    <elementParameter field="PASSWORD" name="PROXY_PASSWORD" show="false" value="enc:system.encryption.key.v1:mKcEvsI+IJASxWbDmqm/SNuzeiTzkK8THGAmol0r"/>
+    <elementParameter field="OPENED_LIST" name="FTPS_PROT" show="false" value="&quot;P&quot;"/>
+    <elementParameter field="TEXT" name="FTPS_PROTECTION_BUFF_SIZE" show="false" value="0"/>
+    <elementParameter field="CHECK" name="REMOTE_VERIFICATION" show="false" value="true"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+  </node>
+  <node componentName="tPostjob" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="128" posY="512">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tPostjob_1"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+  </node>
+  <node componentName="tFTPClose" componentVersion="2.0" offsetLabelX="0" offsetLabelY="0" posX="352" posY="512">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFTPClose_1"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tFTPConnection_1"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+  </node>
+  <node componentName="tWarn" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="544" posY="128">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tWarn_2"/>
+    <elementParameter field="TEXT" name="MESSAGE" value="((String)globalMap.get(&quot;tFileList_1_CURRENT_FILE&quot;)) + &quot; upload successul&quot;"/>
+    <elementParameter field="TEXT" name="CODE" value="42"/>
+    <elementParameter field="CLOSED_LIST" name="PRIORITY" value="4"/>
+    <elementParameter field="TEXT" name="LABEL" value="OK"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tWarn_2"/>
+  </node>
+  <node componentName="tWarn" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="544" posY="256">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tWarn_3"/>
+    <elementParameter field="TEXT" name="MESSAGE" value="((String)globalMap.get(&quot;tFileList_1_CURRENT_FILE&quot;)) + &quot; upload failed&quot;"/>
+    <elementParameter field="TEXT" name="CODE" value="42"/>
+    <elementParameter field="CLOSED_LIST" name="PRIORITY" value="4"/>
+    <elementParameter field="TEXT" name="LABEL" value="KO"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tWarn_3"/>
+  </node>
+  <node componentName="tWarn" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="544" posY="512">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tWarn_4"/>
+    <elementParameter field="TEXT" name="MESSAGE" value="jobName + &quot; ... en&quot;"/>
+    <elementParameter field="TEXT" name="CODE" value="42"/>
+    <elementParameter field="CLOSED_LIST" name="PRIORITY" value="3"/>
+    <elementParameter field="TEXT" name="LABEL" value="OK"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tWarn_4"/>
+  </node>
+  <node componentName="tFileList" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="128" posY="192">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFileList_1"/>
+    <elementParameter field="DIRECTORY" name="DIRECTORY" value="context.SFTP_DIR_LOCAL"/>
+    <elementParameter field="CLOSED_LIST" name="LIST_MODE" value="FILES"/>
+    <elementParameter field="CHECK" name="INCLUDSUBDIR" value="false"/>
+    <elementParameter field="CLOSED_LIST" name="CASE_SENSITIVE" value="YES"/>
+    <elementParameter field="CHECK" name="ERROR" value="false"/>
+    <elementParameter field="CHECK" name="GLOBEXPRESSIONS" value="true"/>
+    <elementParameter field="TABLE" name="FILES">
+      <elementValue elementRef="FILEMASK" value="context.SFTP_FILE_MASK"/>
+    </elementParameter>
+    <elementParameter field="RADIO" name="ORDER_BY_NOTHING" value="true"/>
+    <elementParameter field="RADIO" name="ORDER_BY_FILENAME" value="false"/>
+    <elementParameter field="RADIO" name="ORDER_BY_FILESIZE" value="false"/>
+    <elementParameter field="RADIO" name="ORDER_BY_MODIFIEDDATE" value="false"/>
+    <elementParameter field="RADIO" name="ORDER_ACTION_ASC" value="true"/>
+    <elementParameter field="RADIO" name="ORDER_ACTION_DESC" value="false"/>
+    <elementParameter field="CHECK" name="IFEXCLUDE" value="false"/>
+    <elementParameter field="TEXT" name="EXCLUDEFILEMASK" show="false" value="&quot;*.txt&quot;"/>
+    <elementParameter field="CHECK" name="FORMAT_FILEPATH_TO_SLASH" value="true"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+  </node>
+  <node componentName="tFTPPut" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="352" posY="192">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFTPPut_1"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tFTPConnection_1"/>
+    <elementParameter field="TEXT" name="HOST" show="false" value="&quot;localhost&quot;"/>
+    <elementParameter field="TEXT" name="PORT" show="false" value="21"/>
+    <elementParameter field="TEXT" name="FTPS_PORT" show="false" value="990"/>
+    <elementParameter field="TEXT" name="USERNAME" show="false" value="&quot;anonymous&quot;"/>
+    <elementParameter field="PASSWORD" name="PASSWORD" show="false" value="enc:system.encryption.key.v1:D0S0Zm7dBNy3NQ5B8xL5Ymgqhu3D92+NO0V81dhPNgDbGVt3j3yr"/>
+    <elementParameter field="CHECK" name="SFTP" show="false" value="false"/>
+    <elementParameter field="CHECK" name="FTPS" show="false" value="false"/>
+    <elementParameter field="CLOSED_LIST" name="AUTH_METHOD" show="false" value="PASSWORD"/>
+    <elementParameter field="FILE" name="PRIVATEKEY" show="false" value="&quot;/.ssh/id_dsa&quot;"/>
+    <elementParameter field="PASSWORD" name="PASSPHRASE" show="false" value="enc:system.encryption.key.v1:ptY2e0xItUYxlkBns5aVujWEZmAUK1I00BuzqCB/LaR5bHoE"/>
+    <elementParameter field="DIRECTORY" name="LOCALDIR" value="context.SFTP_DIR_LOCAL"/>
+    <elementParameter field="TEXT" name="REMOTEDIR" value="context.SFTP_DIR_REMOTE"/>
+    <elementParameter field="CHECK" name="CREATE_DIR_IF_NOT_EXIST" value="true"/>
+    <elementParameter field="CHECK" name="MOVE_TO_THE_CURRENT_DIRECTORY" value="true"/>
+    <elementParameter field="FILE" name="KEYSTORE_FILE" show="false" value="&quot;&quot;"/>
+    <elementParameter field="PASSWORD" name="KEYSTORE_PASS" show="false" value="enc:system.encryption.key.v1:9gCqL534NGa552kY7B1tTA3/NxNv2lAzfRiR36zVnsVhyaQt"/>
+    <elementParameter field="CLOSED_LIST" name="MODE" value="ascii"/>
+    <elementParameter field="CLOSED_LIST" name="OVERWRITE" value="always"/>
+    <elementParameter field="CHECK" name="APPEND" value="false"/>
+    <elementParameter field="CLOSED_LIST" name="SFTPOVERWRITE" show="false" value="overwrite"/>
+    <elementParameter field="CLOSED_LIST" name="FTPSOVERWRITE" show="false" value="always"/>
+    <elementParameter field="LABEL" name="NOTE_CUSTOMER" show="false" value="Note: File can not be renamed while using &quot;append&quot; mode in SFTP"/>
+    <elementParameter field="CHECK" name="PERL5_REGEX" value="false"/>
+    <elementParameter field="TABLE" name="FILES">
+      <elementValue elementRef="FILEMASK" value="((String)globalMap.get(&quot;tFileList_1_CURRENT_FILE&quot;))"/>
+      <elementValue elementRef="NEWNAME" value="((String)globalMap.get(&quot;tFileList_1_CURRENT_FILE&quot;))"/>
+    </elementParameter>
+    <elementParameter field="CLOSED_LIST" name="CONNECT_MODE" show="false" value="PASSIVE"/>
+    <elementParameter field="CLOSED_LIST" name="SECURITY_MODE" show="false" value="IMPLICIT"/>
+    <elementParameter field="CHECK" name="USE_ENCODING" show="false" value="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" show="false" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true"/>
+    <elementParameter field="CHECK" name="USE_PROXY" show="false" value="false"/>
+    <elementParameter field="TEXT" name="PROXY_HOST" show="false" value="&quot;61.163.92.4&quot;"/>
+    <elementParameter field="TEXT" name="PROXY_PORT" show="false" value="&quot;1080&quot;"/>
+    <elementParameter field="TEXT" name="PROXY_USERNAME" show="false" value="&quot;&quot;"/>
+    <elementParameter field="PASSWORD" name="PROXY_PASSWORD" show="false" value="enc:system.encryption.key.v1:LxvtGhSR6P2bZA+eYQgzC16uzvd6bEKSfXJ9+AaE"/>
+    <elementParameter field="CHECK" name="IGNORE_FAILURE_AT_QUIT" value="false"/>
+    <elementParameter field="OPENED_LIST" name="FTPS_PROT" show="false" value="&quot;P&quot;"/>
+    <elementParameter field="TEXT" name="FTPS_PROTECTION_BUFF_SIZE" show="false" value="0"/>
+    <elementParameter field="CHECK" name="REMOTE_VERIFICATION" show="false" value="true"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tFTPPut_1"/>
+  </node>
+  <node componentName="tWarn" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="128" posY="352">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tWarn_5"/>
+    <elementParameter field="TEXT" name="MESSAGE" value="&quot;no files at location : &quot; + context.SFTP_DIR_LOCAL + context.SFTP_FILE_MASK"/>
+    <elementParameter field="TEXT" name="CODE" value="42"/>
+    <elementParameter field="CLOSED_LIST" name="PRIORITY" value="3"/>
+    <elementParameter field="TEXT" name="LABEL" value="NO FILE"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tWarn_5"/>
+  </node>
+  <node componentName="tFTPConnection" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="704" posY="32">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFTPConnection_2"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
+    <elementParameter field="TEXT" name="HOST" value="context.FTP_HOST"/>
+    <elementParameter field="TEXT" name="PORT" value="context.FTP_PORT"/>
+    <elementParameter field="TEXT" name="FTPS_PORT" show="false" value="990"/>
+    <elementParameter field="TEXT" name="USER" value="context.FTP_LOGIN"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:75yQRBIq3/CSQ8Z/oHohab4WQmj8zKo/9d66oKi3a+JIGKbn1VkhDV4rBcXHvw=="/>
+    <elementParameter field="CHECK" name="SFTP" value="true"/>
+    <elementParameter field="CHECK" name="FTPS" show="false" value="false"/>
+    <elementParameter field="FILE" name="KEYSTORE_FILE" show="false" value="&quot;&quot;"/>
+    <elementParameter field="PASSWORD" name="KEYSTORE_PASS" show="false" value="enc:system.encryption.key.v1:6lEOtKKJgYKOAuv8OcVyVo8bsRfbSLe56gqmA2TlO2DFlEwS"/>
+    <elementParameter field="CLOSED_LIST" name="AUTH_METHOD" value="PASSWORD"/>
+    <elementParameter field="FILE" name="PRIVATEKEY" show="false" value="&quot;/.ssh/id_dsa&quot;"/>
+    <elementParameter field="PASSWORD" name="PASSPHRASE" show="false" value="enc:system.encryption.key.v1:3QPaXw0venMFRnJ8wirFZH7TENxzfzIQvB1/xS8L+g09QOdL"/>
+    <elementParameter field="CLOSED_LIST" name="CONNECT_MODE" show="false" value="PASSIVE"/>
+    <elementParameter field="CLOSED_LIST" name="SECURITY_MODE" show="false" value="IMPLICIT"/>
+    <elementParameter field="CHECK" name="USE_ENCODING" value="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" show="false" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="USE_PROXY" value="false"/>
+    <elementParameter field="TEXT" name="PROXY_HOST" show="false" value="&quot;61.163.92.4&quot;"/>
+    <elementParameter field="TEXT" name="PROXY_PORT" show="false" value="&quot;1080&quot;"/>
+    <elementParameter field="TEXT" name="PROXY_USERNAME" show="false" value="&quot;&quot;"/>
+    <elementParameter field="PASSWORD" name="PROXY_PASSWORD" show="false" value="enc:system.encryption.key.v1:zHmOJXHGRA8vbdK+Nx0WEcaLHhi49Xd9mKp8/pQc"/>
+    <elementParameter field="OPENED_LIST" name="FTPS_PROT" show="false" value="&quot;P&quot;"/>
+    <elementParameter field="TEXT" name="FTPS_PROTECTION_BUFF_SIZE" show="false" value="0"/>
+    <elementParameter field="CHECK" name="REMOTE_VERIFICATION" show="false" value="true"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+  </node>
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tPrejob_1" offsetLabelX="0" offsetLabelY="0" source="tPrejob_1" target="tWarn_1">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnComponentOk1"/>
+  </connection>
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tWarn_1" offsetLabelX="0" offsetLabelY="0" source="tWarn_1" target="tFTPConnection_1">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnComponentOk2"/>
+  </connection>
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tPostjob_1" offsetLabelX="0" offsetLabelY="0" source="tPostjob_1" target="tFTPClose_1">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnComponentOk3"/>
+  </connection>
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tFTPClose_1" offsetLabelX="0" offsetLabelY="0" source="tFTPClose_1" target="tWarn_4">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnComponentOk5"/>
+  </connection>
+  <connection connectorName="ITERATE" label="Iterate" lineStyle="7" metaname="tFileList_1" offsetLabelX="0" offsetLabelY="0" source="tFileList_1" target="tFTPPut_1">
+    <elementParameter field="CHECK" name="ENABLE_PARALLEL" value="false"/>
+    <elementParameter field="TEXT" name="NUMBER_PARALLEL" show="false" value="2"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="iterate1"/>
+  </connection>
+  <connection connectorName="RUN_IF" label="If" lineStyle="6" metaname="tFileList_1" offsetLabelX="0" offsetLabelY="0" source="tFileList_1" target="tWarn_5">
+    <elementParameter field="MEMO_JAVA" name="CONDITION" value="((Integer)globalMap.get(&quot;tFileList_1_NB_FILE&quot;)) == 0"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="If1"/>
+  </connection>
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tFTPPut_1" offsetLabelX="0" offsetLabelY="0" source="tFTPPut_1" target="tWarn_2">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnComponentOk4"/>
+  </connection>
+  <connection connectorName="COMPONENT_ERROR" label="OnComponentError" lineStyle="5" metaname="tFTPPut_1" offsetLabelX="0" offsetLabelY="0" source="tFTPPut_1" target="tWarn_3">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnComponentError1"/>
+  </connection>
+  <subjob>
+    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" show="false" value="true"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tPrejob_1"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="230;100;0"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="255;220;180"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tWarn_1"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFTPConnection_1"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" show="false" value="true"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tPostjob_1"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="230;100;0"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="255;220;180"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFTPClose_1"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tWarn_2"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tWarn_3"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tWarn_4"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFileList_1"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tWarn_5"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFTPConnection_2"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_0d172ce9-c2a6-4046-865f-62477a544de9"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>14GKeQu5CTgOZBO7gP5w4YNesmn2LMYx+tvq9oz74p7WKY5bym4crn1YoZp+lewDlYvgcWoYL9cT
+ENSSjwDa6g==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_e7394025-f2ae-41b0-a290-28b4d6a96cf2"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>rfQq3PrmRzTg3FTSf2nctaTtPMJIvBh+l9ZIZ2vRwIeP19wWUI7RhdHZ7xirD8oxCx/7ExyF8T+g
+/lOS6G3I4g==</DigestValue></Reference></SignedInfo><SignatureValue>Vq3+kDBWOncwcE4mrsOIyZLEMmz2oT4wwjm+8tOus5AqzXIZdJMFFOeQ5+NJ6ikeUjuhOt3RTE0F
+i72xtfjLDgyyNVoUg/rTWHZWQdKS5WYoD3C9rlhihOxaAC+oJGAUG9mN+xDrT4ikY+dsZd5ZWZfk
+RJNEJ4hLtxCwInO9yKP8qy984/wvbIlnkeeG6aNBgRKY4kB2+iib/OiIW3oxIExA4THVnipzkAyi
+VCmTAQtUX8zHGnwuV5HmmcoqeDdovhVCgyoTPR+LZx6D6PaCwUCJsPT4e4ewExVVO4//ys/iL+Qr
+6a+9ZUCH4yjjhGNERWvvNCzXJYNQy9EQm3DSmg==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w
+DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD
+VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5
+QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U
+YWxlbmQgQ29kZSBTaWduaW5nIGNlcnRpZmljYXRlMQwwCgYDVQQLDANSJkQxFDASBgNVBAoTC1Rh
+bGVuZCBJbmMuMQ4wDAYDVQQHEwVQYXJpczEOMAwGA1UECBMFUGFyaXMxCzAJBgNVBAYTAkZSMIIB
+IjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAp5TMF8BmRt8dY51t9kIDdDkoOKVVytJN2gn2
+DhMGi8hzpUofNDykJDhe9SPqyJdGZ6o/h7laTA0/CivKyPT1OJQ9E2gMHKs8cTZM/cO2w0Atlqkl
+alIxepol0DNnUtmECVBqdnVsJesfmdoeptxgJAtxYbquFsTsrATNY2cscXpwmOca/Ewip48WQLFx
+e5s067jaIsAQGRIqpIup3bOtWBySrtImJ40lQCPeEcl96qzkv3utaVaNc3ukkhYkCDbMbK8NVd1B
+CVeeIBAe+n/SdpHH20o+6eIiZecsBGDLwlTYrFvuVqAa6xI7y8Vdz6irjPAVBEtG/iOc782aJ/lZ
+TwIDAQABo3UwczAMBgNVHRMBAf8EAjAAMA4GA1UdDwEB/wQEAwIHgDATBgNVHSUEDDAKBggrBgEF
+BQcDAzAdBgNVHQ4EFgQUGdfzQEbjQnANq28sfhEMTx+rsOcwHwYDVR0jBBgwFoAU530Lcvy1gZnG
+gCvZLOyCczK1qPcwDQYJKoZIhvcNAQELBQADggIBAEr22wnaQwZm2dhbUCqD+qZpTq2AF/tzxqAM
+eL/CiTjPbTblS4SNNwCKvTgMe9ucpUbenXmK7xE+DU9dN4om+t3VHbkOLQVyuLcd2WGsy7ZGwRvA
+f+TFwLbwjyTukOGm6Sd1qyZgvCPzBsKnft6vscvGy2yEpmFCeHJyBP8pvchg607zguRdNbkGYZXw
+G6jNipAbTtzdPTFKKr1bEf0sUGqMrlZIMPjflh2Vewu8ImNdX5IZdvBD6DdFVOC5wqV6u+W9ukE/
+mXZxDBYNl2AF7FTh04ucEVN3mHv7m2L0uFvUlhxchcagJhJsdQG+A0LVCemHbp6CSNQJx02KxqUG
+hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/
+WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW
+gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+
+qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_e7394025-f2ae-41b0-a290-28b4d6a96cf2" Target="#_0d172ce9-c2a6-4046-865f-62477a544de9"><Timestamp>2021-04-25 23:59:52</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>

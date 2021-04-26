@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><xmi:XMI xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmi:version="2.0">
+  <talendfile:ContextType confirmationNeeded="false" name="Default" xmi:id="_TwUFAKYiEeumbutYNgXfIw">
+    <contextParameter comment="" name="SFTP_DIR_REMOTE" prompt="SFTP_DIR_REMOTE?" promptNeeded="false" type="id_String" value="SFTP_DIR_REMOTE" xmi:id="_TwUFAaYiEeumbutYNgXfIw"/>
+    <contextParameter comment="" name="SFTP_DIR_LOCAL" prompt="SFTP_DIR_LOCAL?" promptNeeded="false" type="id_String" value="SFTP_DIR_LOCAL" xmi:id="_TwUFAqYiEeumbutYNgXfIw"/>
+    <contextParameter comment="" name="SFTP_FILE_MASK" prompt="SFTP_FILE_MASK?" promptNeeded="false" type="id_String" value="SFTP_FILE_MASK" xmi:id="_TwUFA6YiEeumbutYNgXfIw"/>
+    <contextParameter comment="" name="SFTP_ARCHIVE_FILE_AFTER_DOWNLOAD" prompt="SFTP_ARCHIVE_FILE_AFTER_DOWNLOAD?" promptNeeded="false" type="id_Boolean" value="true" xmi:id="_TwUFBKYiEeumbutYNgXfIw"/>
+    <contextParameter comment="" name="SFTP_DELETE_FILE_AFTER_DOWNLOAD" prompt="SFTP_DELETE_FILE_AFTER_DOWNLOAD?" promptNeeded="false" type="id_Boolean" value="false" xmi:id="_TwUFBaYiEeumbutYNgXfIw"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType confirmationNeeded="false" name="DEV" xmi:id="_TwUFBqYiEeumbutYNgXfIw">
+    <contextParameter comment="" name="SFTP_DIR_REMOTE" prompt="SFTP_DIR_REMOTE?" promptNeeded="false" type="id_String" value="SFTP_DIR_REMOTE" xmi:id="_TwUFB6YiEeumbutYNgXfIw"/>
+    <contextParameter comment="" name="SFTP_DIR_LOCAL" prompt="SFTP_DIR_LOCAL?" promptNeeded="false" type="id_String" value="SFTP_DIR_LOCAL" xmi:id="_TwUFCKYiEeumbutYNgXfIw"/>
+    <contextParameter comment="" name="SFTP_FILE_MASK" prompt="SFTP_FILE_MASK?" promptNeeded="false" type="id_String" value="SFTP_FILE_MASK" xmi:id="_TwUFCaYiEeumbutYNgXfIw"/>
+    <contextParameter comment="" name="SFTP_ARCHIVE_FILE_AFTER_DOWNLOAD" prompt="SFTP_ARCHIVE_FILE_AFTER_DOWNLOAD?" promptNeeded="false" type="id_Boolean" value="true" xmi:id="_TwUFCqYiEeumbutYNgXfIw"/>
+    <contextParameter comment="" name="SFTP_DELETE_FILE_AFTER_DOWNLOAD" prompt="SFTP_DELETE_FILE_AFTER_DOWNLOAD?" promptNeeded="false" type="id_Boolean" value="false" xmi:id="_TwUFC6YiEeumbutYNgXfIw"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType confirmationNeeded="false" name="PROD" xmi:id="_TwUFDKYiEeumbutYNgXfIw">
+    <contextParameter comment="" name="SFTP_DIR_REMOTE" prompt="SFTP_DIR_REMOTE?" promptNeeded="false" type="id_String" value="SFTP_DIR_REMOTE" xmi:id="_TwUFDaYiEeumbutYNgXfIw"/>
+    <contextParameter comment="" name="SFTP_DIR_LOCAL" prompt="SFTP_DIR_LOCAL?" promptNeeded="false" type="id_String" value="SFTP_DIR_LOCAL" xmi:id="_TwUFDqYiEeumbutYNgXfIw"/>
+    <contextParameter comment="" name="SFTP_FILE_MASK" prompt="SFTP_FILE_MASK?" promptNeeded="false" type="id_String" value="SFTP_FILE_MASK" xmi:id="_TwUFD6YiEeumbutYNgXfIw"/>
+    <contextParameter comment="" name="SFTP_ARCHIVE_FILE_AFTER_DOWNLOAD" prompt="SFTP_ARCHIVE_FILE_AFTER_DOWNLOAD?" promptNeeded="false" type="id_Boolean" value="true" xmi:id="_TwUFEKYiEeumbutYNgXfIw"/>
+    <contextParameter comment="" name="SFTP_DELETE_FILE_AFTER_DOWNLOAD" prompt="SFTP_DELETE_FILE_AFTER_DOWNLOAD?" promptNeeded="false" type="id_Boolean" value="false" xmi:id="_TwUFEaYiEeumbutYNgXfIw"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType confirmationNeeded="false" name="PRODUCTION" xmi:id="_TwUFEqYiEeumbutYNgXfIw">
+    <contextParameter comment="" name="SFTP_DIR_REMOTE" prompt="SFTP_DIR_REMOTE?" promptNeeded="false" type="id_String" value="SFTP_DIR_REMOTE" xmi:id="_TwUFE6YiEeumbutYNgXfIw"/>
+    <contextParameter comment="" name="SFTP_DIR_LOCAL" prompt="SFTP_DIR_LOCAL?" promptNeeded="false" type="id_String" value="SFTP_DIR_LOCAL" xmi:id="_TwUFFKYiEeumbutYNgXfIw"/>
+    <contextParameter comment="" name="SFTP_FILE_MASK" prompt="SFTP_FILE_MASK?" promptNeeded="false" type="id_String" value="SFTP_FILE_MASK" xmi:id="_TwUFFaYiEeumbutYNgXfIw"/>
+    <contextParameter comment="" name="SFTP_ARCHIVE_FILE_AFTER_DOWNLOAD" prompt="SFTP_ARCHIVE_FILE_AFTER_DOWNLOAD?" promptNeeded="false" type="id_Boolean" value="true" xmi:id="_TwUFFqYiEeumbutYNgXfIw"/>
+    <contextParameter comment="" name="SFTP_DELETE_FILE_AFTER_DOWNLOAD" prompt="SFTP_DELETE_FILE_AFTER_DOWNLOAD?" promptNeeded="false" type="id_Boolean" value="false" xmi:id="_TwUFF6YiEeumbutYNgXfIw"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType confirmationNeeded="false" name="RECETTE" xmi:id="_TwUFGKYiEeumbutYNgXfIw">
+    <contextParameter comment="" name="SFTP_DIR_REMOTE" prompt="SFTP_DIR_REMOTE?" promptNeeded="false" type="id_String" value="SFTP_DIR_REMOTE" xmi:id="_TwUFGaYiEeumbutYNgXfIw"/>
+    <contextParameter comment="" name="SFTP_DIR_LOCAL" prompt="SFTP_DIR_LOCAL?" promptNeeded="false" type="id_String" value="SFTP_DIR_LOCAL" xmi:id="_TwUFGqYiEeumbutYNgXfIw"/>
+    <contextParameter comment="" name="SFTP_FILE_MASK" prompt="SFTP_FILE_MASK?" promptNeeded="false" type="id_String" value="SFTP_FILE_MASK" xmi:id="_TwUFG6YiEeumbutYNgXfIw"/>
+    <contextParameter comment="" name="SFTP_ARCHIVE_FILE_AFTER_DOWNLOAD" prompt="SFTP_ARCHIVE_FILE_AFTER_DOWNLOAD?" promptNeeded="false" type="id_Boolean" value="true" xmi:id="_TwUFHKYiEeumbutYNgXfIw"/>
+    <contextParameter comment="" name="SFTP_DELETE_FILE_AFTER_DOWNLOAD" prompt="SFTP_DELETE_FILE_AFTER_DOWNLOAD?" promptNeeded="false" type="id_Boolean" value="false" xmi:id="_TwUFHaYiEeumbutYNgXfIw"/>
+  </talendfile:ContextType>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_fa8767f2-b639-4eb1-8ff4-48996091e7ac"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>clYsiOOMheUeM8NVNfv1hO3hxr2O/pO9DHFylun52PfFzQVsTv/6l/pvOCjRt7OfwYUc874NZjWX
+vbmTAUg8cA==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_28e5c5a3-5580-4752-bdde-f9aefc087ff0"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>bGLYEqcsY6w5XZ01eQKyDtJYCp8NkXCdRfsSOGOAV5awE4fX21VrWji5wP09SQpFtirEyULMB9H9
+Ha85qR3HKw==</DigestValue></Reference></SignedInfo><SignatureValue>QEzHGZKliZZDNQSnJh9MRByvEwM+EOeWHz3U1RdNp8NbqPT5IIT2xybeokoRV2R6vxQwMYzyczys
+dELyDnTrq1IZQXdVrgDN0WgNXteBmaY8sqnvBuiyQ7gB2+3RwtZpwcDbpPU/xnEY5NehNLD1y3I+
+VQgPIP5lDCY37a6nabkQh3xTDS2XS+UYSu83p+vvKHYLQO87Mq+R9zKEtZjzSLnwS1twlsCwnZp7
+51OMVfZ+hgSjTulgQi4tmyskVddjj7oFBeia8bGkO+e6VR0JgXcJOOFhcHXmjlcFrpqM6KRUMIVw
+PO7oIBv3qtjzqzsvEX5Lox0LNuhSjc6lRGZ9Gg==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w
+DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD
+VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5
+QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U
+YWxlbmQgQ29kZSBTaWduaW5nIGNlcnRpZmljYXRlMQwwCgYDVQQLDANSJkQxFDASBgNVBAoTC1Rh
+bGVuZCBJbmMuMQ4wDAYDVQQHEwVQYXJpczEOMAwGA1UECBMFUGFyaXMxCzAJBgNVBAYTAkZSMIIB
+IjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAp5TMF8BmRt8dY51t9kIDdDkoOKVVytJN2gn2
+DhMGi8hzpUofNDykJDhe9SPqyJdGZ6o/h7laTA0/CivKyPT1OJQ9E2gMHKs8cTZM/cO2w0Atlqkl
+alIxepol0DNnUtmECVBqdnVsJesfmdoeptxgJAtxYbquFsTsrATNY2cscXpwmOca/Ewip48WQLFx
+e5s067jaIsAQGRIqpIup3bOtWBySrtImJ40lQCPeEcl96qzkv3utaVaNc3ukkhYkCDbMbK8NVd1B
+CVeeIBAe+n/SdpHH20o+6eIiZecsBGDLwlTYrFvuVqAa6xI7y8Vdz6irjPAVBEtG/iOc782aJ/lZ
+TwIDAQABo3UwczAMBgNVHRMBAf8EAjAAMA4GA1UdDwEB/wQEAwIHgDATBgNVHSUEDDAKBggrBgEF
+BQcDAzAdBgNVHQ4EFgQUGdfzQEbjQnANq28sfhEMTx+rsOcwHwYDVR0jBBgwFoAU530Lcvy1gZnG
+gCvZLOyCczK1qPcwDQYJKoZIhvcNAQELBQADggIBAEr22wnaQwZm2dhbUCqD+qZpTq2AF/tzxqAM
+eL/CiTjPbTblS4SNNwCKvTgMe9ucpUbenXmK7xE+DU9dN4om+t3VHbkOLQVyuLcd2WGsy7ZGwRvA
+f+TFwLbwjyTukOGm6Sd1qyZgvCPzBsKnft6vscvGy2yEpmFCeHJyBP8pvchg607zguRdNbkGYZXw
+G6jNipAbTtzdPTFKKr1bEf0sUGqMrlZIMPjflh2Vewu8ImNdX5IZdvBD6DdFVOC5wqV6u+W9ukE/
+mXZxDBYNl2AF7FTh04ucEVN3mHv7m2L0uFvUlhxchcagJhJsdQG+A0LVCemHbp6CSNQJx02KxqUG
+hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/
+WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW
+gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+
+qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_28e5c5a3-5580-4752-bdde-f9aefc087ff0" Target="#_fa8767f2-b639-4eb1-8ff4-48996091e7ac"><Timestamp>2021-04-25 23:59:44</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></xmi:XMI>

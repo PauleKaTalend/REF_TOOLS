@@ -10,6 +10,39 @@
   <url>http://www.talend.org/</url>
   <modules>
     <module>code/routines</module>
+    <module>jobs/process/REF_TOOLS/FTP/sftp_get_files_0.1</module>
+    <module>jobs/process/REF_TOOLS/FTP/sftp_put_files_and_archive_0.1</module>
+    <module>jobs/process/REF_TOOLS/MAIL/copy_of_j_send_mail_0.1</module>
+    <module>jobs/process/REF_TOOLS/Z_DEV/testfile_clean_error_0.1</module>
+    <module>jobs/process/REF_TOOLS/TRANSFERT/ftp_file_transfert_0.1</module>
+    <module>jobs/process/REF_TOOLS/DB/j_db_mysql_dump_0.1</module>
+    <module>jobs/process/REF_TOOLS/MAIL/modele_send_mail_0.1</module>
+    <module>jobs/process/REF_TOOLS/CLEAN/modele_clean_ftp_0.1</module>
+    <module>jobs/process/REF_TOOLS/MAIL/j_send_mail_0.1</module>
+    <module>jobs/process/REF_TOOLS/FTP/sftp_file_archive_0.1</module>
+    <module>jobs/process/REF_TOOLS/CLEAN/modele_clean_server_0.1</module>
+    <module>jobs/process/REF_TOOLS/FTP/ftp_get_files_passif_0.1</module>
+    <module>jobs/process/REF_TOOLS/MAIL/smtp_0.1</module>
+    <module>jobs/process/REF_TOOLS/Z_DEV/testclean_server_0.1</module>
+    <module>jobs/process/REF_TOOLS/FTP/ftp_put_files_0.1</module>
+    <module>jobs/process/REF_TOOLS/Z_DEV/testclean_ftp_0.1</module>
+    <module>jobs/process/REF_TOOLS/MAIL/j_send_mail_ori_0.1</module>
+    <module>jobs/process/REF_TOOLS/REPORT/j_report_0.1</module>
+    <module>jobs/process/REF_TOOLS/TRANSFERT/ftp_file_duplicate_0.1</module>
+    <module>jobs/process/REF_TOOLS/Z_DEV/testfile_put_and_archive_0.1</module>
+    <module>jobs/process/REF_TOOLS/FTP/ftp_get_files_0.1</module>
+    <module>jobs/process/REF_TOOLS/WORKSPACE/j_file_clean_0.1</module>
+    <module>jobs/process/REF_TOOLS/Z_DEV/testsftp_get_0.1</module>
+    <module>jobs/process/REF_TOOLS/WORKSPACE/j_archive_log_0.1</module>
+    <module>jobs/process/REF_TOOLS/FTP/ftp_put_files_passif_0.1</module>
+    <module>jobs/process/REF_TOOLS/CLEAN/clean_server_0.1</module>
+    <module>jobs/process/REF_TOOLS/Z_DEV/testfile_archive_0.1</module>
+    <module>jobs/process/REF_TOOLS/CLEAN/clean_ftp_0.1</module>
+    <module>jobs/process/REF_TOOLS/db_0.1</module>
+    <module>jobs/process/REF_TOOLS/FTP/sftp_put_files_0.1</module>
+    <module>jobs/process/REF_TOOLS/WORKSPACE/j_clean_worspace_0.1</module>
+    <module>jobs/process/REF_TOOLS/REPORT/j_report_default_0.1</module>
+    <module>jobs/process/REF_TOOLS/WORKSPACE/j_file_archive_and_clean_0.1</module>
   </modules>
   <properties>
     <signer.version>7.3.1</signer.version>
