@@ -1,6 +1,3 @@
 {
-  "reference_projects" : [ {
-    "project" : "REF_COMMON",
-    "branch" : "master"
-  } ]
+  "reference_projects" : [ ]
 }

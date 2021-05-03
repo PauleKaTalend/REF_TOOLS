@@ -43,7 +43,6 @@
     <module>jobs/process/REF_TOOLS/WORKSPACE/j_clean_worspace_0.1</module>
     <module>jobs/process/REF_TOOLS/REPORT/j_report_default_0.1</module>
     <module>jobs/process/REF_TOOLS/WORKSPACE/j_file_archive_and_clean_0.1</module>
-    <module>../../REF_COMMON/poms</module>
   </modules>
   <properties>
     <signer.version>7.3.1</signer.version>
