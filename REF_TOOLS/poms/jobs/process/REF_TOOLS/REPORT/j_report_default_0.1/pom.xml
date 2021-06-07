@@ -48,11 +48,6 @@
       <version>1.1</version>
     </dependency>
     <dependency>
-      <groupId>org.talend.libraries</groupId>
-      <artifactId>activation</artifactId>
-      <version>6.0.0</version>
-    </dependency>
-    <dependency>
       <groupId>org.ow2.asm</groupId>
       <artifactId>asm</artifactId>
       <version>5.0.3</version>
@@ -66,16 +61,6 @@
       <groupId>org.talend.daikon</groupId>
       <artifactId>audit-log4j2</artifactId>
       <version>1.8.0</version>
-    </dependency>
-    <dependency>
-      <groupId>org.talend.libraries</groupId>
-      <artifactId>checkArchive-1.1-20190917</artifactId>
-      <version>6.0.0</version>
-    </dependency>
-    <dependency>
-      <groupId>org.apache.commons</groupId>
-      <artifactId>commons-compress</artifactId>
-      <version>1.19</version>
     </dependency>
     <dependency>
       <groupId>org.apache.commons</groupId>
@@ -133,11 +118,6 @@
       <version>1.8.0</version>
     </dependency>
     <dependency>
-      <groupId>org.talend.libraries</groupId>
-      <artifactId>mail-1.4</artifactId>
-      <version>6.0.0</version>
-    </dependency>
-    <dependency>
       <groupId>org.slf4j</groupId>
       <artifactId>slf4j-api</artifactId>
       <version>1.7.25</version>
@@ -151,16 +131,6 @@
       <groupId>org.talend.libraries</groupId>
       <artifactId>talendcsv</artifactId>
       <version>6.0.0</version>
-    </dependency>
-    <dependency>
-      <groupId>org.talend.libraries</groupId>
-      <artifactId>talendzip</artifactId>
-      <version>1.0-20190917</version>
-    </dependency>
-    <dependency>
-      <groupId>net.lingala.zip4j</groupId>
-      <artifactId>zip4j</artifactId>
-      <version>1.3.3</version>
     </dependency>
     <dependency>
       <groupId>org.example.ref_tools.code</groupId>
